@@ -16,7 +16,6 @@ jobs:
         ruby-version: '3.3' # Not needed with a .ruby-version file
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
         self-hosted: true
-        architecture: 'ppc64le'
     - run: |
         bundle exec rake
         ruby -v
