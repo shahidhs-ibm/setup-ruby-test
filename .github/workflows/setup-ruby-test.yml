@@ -20,5 +20,6 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
         self-hosted: true
     - run: |
-        bundle exec rake
         ruby -v
+        bundle install
+        bundle exec ruby hello.rb
