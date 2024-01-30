@@ -15,7 +15,6 @@ jobs:
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby }}
-        self-hosted: true
     - run: |
         ruby -v
         bundle install
